@@ -57,6 +57,36 @@ The deterministic simulator traverses directed graphs producing bounded trace st
 - **Security by design**: Version guards, bounded outputs, and single-use tokens prevent many classes of attacks while maintaining usability
 - **Static architecture**: A well-designed static app can deliver complex functionality without backend dependencies
 
+## WebMCP Testing & AI Tools Used
+
+**Which agent(s) or client(s) did you test your WebMCP tools with?**
+
+FlowLens was tested primarily with Chrome's built-in WebMCP implementation in Chrome Canary/Dev channels. The tools were designed to be compatible with any WebMCP-compliant browser agent following the Chrome WebMCP imperative API specification. Testing included:
+- Manual invocation through Chrome DevTools
+- Automated testing via Playwright E2E tests that simulate WebMCP tool calls
+- Real in-app WebMCP calls verified during development (diagnosis, preview, approval-scope registration, apply, and rerun all passing)
+
+**Which AI tools have you leveraged while working on this project?**
+
+- **GitHub Copilot**: Used for code completion, refactoring suggestions, and generating boilerplate React components
+- **ChatGPT/Claude**: Leveraged for architectural decisions, debugging complex WebMCP lifecycle issues, and generating test scenarios
+- **TypeScript compiler**: Utilized strict type checking as an AI-assisted code quality tool throughout development
+- **Vitest/Playwright**: AI-patterned testing frameworks for deterministic unit and E2E test coverage
+
+**Describe the level of learning you/your team derived from the project**
+
+This project provided deep learning across multiple domains:
+- **WebMCP API mastery**: Gained comprehensive understanding of the imperative WebMCP API, including tool registration, lifecycle management, security boundaries, and compatibility patterns
+- **React architecture patterns**: Learned advanced React patterns including typed reducers, command facades, and complex state management with undo/redo
+- **Security engineering**: Developed practical experience implementing bounded outputs, version guards, single-use tokens, and field redaction
+- **Deterministic systems**: Learned to build realistic simulators that provide sufficient evidence without requiring real integrations
+- **Static application architecture**: Understood how to deliver complex functionality through well-designed static applications without backend dependencies
+- **Domain-driven design**: Applied DDD principles to create clean separation between domain, application, and feature layers
+
+**Did you gain AI value that you can use in your career? (Yes or no)**
+
+Yes. The WebMCP integration patterns, security-by-design approach, and deterministic simulation techniques learned during this project are directly applicable to building AI-assisted development tools, debugging systems, and workflow automation platforms in professional settings.
+
 ## What's next for FlowLens
 - **Additional workflow types**: Expand beyond the CRM escalation hero flow to support more automation patterns
 - **Richer patch DSL**: Add more safe operations beyond `replace_condition_field` while maintaining boundedness
