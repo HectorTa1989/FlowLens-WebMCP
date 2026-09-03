@@ -7,3 +7,6 @@ coverage
 .env
 .env.local
 *.local
+grand-prize-combined-prompt.md
+01-workflow-flight-recorder.md
+05-datacanvas.md
